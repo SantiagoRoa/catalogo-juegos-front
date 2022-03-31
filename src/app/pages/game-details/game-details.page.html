@@ -1,0 +1,25 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="body_container">
+  <h1>{{game.nombre}}</h1>
+
+  <div class="container_details">
+    <img src="{{game.imagen}}">
+    <span>
+      Precio Actual {{game.precio}}
+    </span>
+  </div>
+
+  <h2>Descripción</h2>
+  <div class="container_deals">
+
+    <div class="deal">
+      <p>{{game.descripcion}}</p>
+    </div>
+  </div>
+
+  <div class="btn-delete" (click)="deleteGame()">
+    Borrar Juego
+  </div>
+
+</div>

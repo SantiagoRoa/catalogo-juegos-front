@@ -1,0 +1,11 @@
+<app-nav-bar [inputHide]="true" (searchGame)="search($event)"></app-nav-bar>
+
+<div class="body_container">
+  <h1>Todos los Juegos</h1>
+
+  <div class="content">
+    <app-game-item [name]="game.nombre" [precio]="game.precio" [id]="game.id" [img]="game.imagen"
+      *ngFor="let game of games"></app-game-item>
+  </div>
+
+</div>
